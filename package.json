@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "author": "Alexey Vasyukov (@notmedia)",
   "homepage": "https://github.com/notmedia/eslint-config#readme",
+  "files": [
+    "src"
+  ],
   "bugs": {
     "url": "https://github.com/notmedia/eslint-config/issues"
   },

@@ -1,6 +1,6 @@
 {
   "name": "@notmedia/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Alexey Vasyukov (@notmedia)",
   "homepage": "https://github.com/notmedia/eslint-config#readme",
   "files": [
@@ -13,8 +13,22 @@
     "type": "git",
     "url": "git+https://github.com/notmedia/eslint-config.git"
   },
+  "scripts": {
+    "ncu": "ncu"
+  },
   "type": "module",
   "main": "src/index.js",
+  "exports": {
+    ".": {
+      "import": "./src/index.js"
+    },
+    "./frontend": {
+      "import": "./src/frontend.js"
+    },
+    "./backend": {
+      "import": "./src/backend.js"
+    }
+  },
   "peerDependencies": {
     "eslint": "9.39.2",
     "eslint-plugin-prettier": "5.5.4",
@@ -35,8 +49,5 @@
   },
   "devDependencies": {
     "npm-check-updates": "19.2.0"
-  },
-  "publishConfig": {
-    "registry": ""
   }
 }

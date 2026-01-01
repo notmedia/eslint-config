@@ -8,7 +8,7 @@ export default defineConfig({
   languageOptions: {
     globals: {
       ...globals.node,
-      ...globals.es2025,
+      ...globals.es2024,
     },
   },
 });

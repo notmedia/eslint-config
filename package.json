@@ -1,6 +1,6 @@
 {
   "name": "@notmedia/eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Alexey Vasyukov (@notmedia)",
   "homepage": "https://github.com/notmedia/eslint-config#readme",
   "files": [
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/notmedia/eslint-config.git"
   },
   "scripts": {
-    "ncu": "ncu"
+    "ncu": "ncu -u"
   },
   "type": "module",
   "main": "src/index.js",
@@ -35,7 +35,7 @@
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-simple-import-sort": "12.1.1",
     "prettier": "3.7.4",
-    "typescript-eslint": "8.50.1"
+    "typescript-eslint": "8.51.0"
   },
   "peerDependenciesMeta": {
     "eslint-plugin-react": {

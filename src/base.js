@@ -7,6 +7,7 @@ import tseslint from 'typescript-eslint';
 
 export const ALL_FILES = '**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}';
 export const JS_FILES = '**/*.{js,jsx,mjs,cjs}';
+export const TS_FILES = '**/*.{ts,tsx,mts,cts}';
 
 export default defineConfig(
   {

@@ -1,5 +1,5 @@
 import backend from './backend.js';
-import base, { ALL_FILES, JS_FILES } from './base.js';
+import base, { ALL_FILES, JS_FILES, TS_FILES } from './base.js';
 import frontend from './frontend.js';
 
 export default {
@@ -11,5 +11,6 @@ export default {
   patterns: {
     ALL_FILES,
     JS_FILES,
+    TS_FILES,
   },
 };

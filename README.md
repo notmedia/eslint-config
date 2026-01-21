@@ -8,9 +8,9 @@ npm i eslint @notmedia/eslint-config -d
 
 # Configs
 
-base - contains base configuration for both backend and fronted
-frontend - extends from base, contains frontend (react) specific rules
-backend - extends from base, contains backend specific rules
+`base` - contains base configuration for both backend and fronted\
+`frontend` - extends from `base`, contains frontend (react) specific rules\
+`backend` - extends from `base`, contains backend specific rules
 
 # Patterns
 

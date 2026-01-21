@@ -3,7 +3,7 @@
 # Installation
 
 ```bash
-npm i eslint @notmedia/eslint-config -d
+npm i eslint @notmedia/eslint-config -D
 ```
 
 # Configs

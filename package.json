@@ -1,6 +1,6 @@
 {
   "name": "@notmedia/eslint-config",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "Alexey Vasyukov (@notmedia)",
   "homepage": "https://github.com/notmedia/eslint-config#readme",
   "files": [
@@ -30,19 +30,19 @@
     }
   },
   "peerDependencies": {
-    "eslint": "9.39.2"
+    "eslint": "9.39.4"
   },
   "dependencies": {
     "eslint-plugin-prettier": "5.5.5",
-    "@eslint/js": "9.39.2",
+    "@eslint/js": "9.39.4",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-simple-import-sort": "12.1.1",
-    "globals": "17.0.0",
-    "prettier": "3.8.0",
-    "typescript-eslint": "8.53.1"
+    "globals": "17.4.0",
+    "prettier": "3.8.1",
+    "typescript-eslint": "8.58.0"
   },
   "devDependencies": {
-    "npm-check-updates": "19.3.1"
+    "npm-check-updates": "19.6.6"
   }
 }

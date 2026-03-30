@@ -2,4 +2,5 @@
 module.exports = {
   dep: ['prod', 'dev', 'optional', 'peer'],
   removeRange: true,
+  reject: ['eslint', '@eslint/js'],
 };

@@ -8,6 +8,8 @@ import tseslint from 'typescript-eslint';
 export const ALL_FILES = '**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}';
 export const JS_FILES = '**/*.{js,jsx,mjs,cjs}';
 export const TS_FILES = '**/*.{ts,tsx,mts,cts}';
+export const REACT_FILES = '**/*.{jsx,tsx}';
+export const TEST_FILES = '**/*.{spec,test}.{js,jsx,mjs,cjs,ts,tsx,mts,cts}';
 
 export default defineConfig(
   {
@@ -26,16 +28,12 @@ export default defineConfig(
       parserOptions: {
         projectService: true,
       },
-      globals: {
-        ...globals.vitest,
-      },
     },
     rules: {
       curly: 'error',
       eqeqeq: ['error', 'always'],
       'no-console': 'error',
       'no-param-reassign': 'error',
-      'no-duplicate-imports': 'error',
 
       '@typescript-eslint/no-unused-vars': [
         'error',
@@ -50,6 +48,12 @@ export default defineConfig(
           groups: [['^\\u0000'], ['^(node:)'], ['^[^.]'], ['^\\.']],
         },
       ],
+    },
+  },
+  {
+    files: [TEST_FILES],
+    languageOptions: {
+      globals: { ...globals.vitest },
     },
   },
   {

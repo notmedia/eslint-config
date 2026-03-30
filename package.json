@@ -1,6 +1,6 @@
 {
   "name": "@notmedia/eslint-config",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "author": "Alexey Vasyukov (@notmedia)",
   "homepage": "https://github.com/notmedia/eslint-config#readme",
   "files": [
@@ -17,7 +17,6 @@
     "ncu": "ncu -u"
   },
   "type": "module",
-  "main": "src/index.js",
   "exports": {
     ".": {
       "import": "./src/index.js"
@@ -30,16 +29,16 @@
     }
   },
   "peerDependencies": {
-    "eslint": "9.39.4"
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0"
   },
   "dependencies": {
-    "eslint-plugin-prettier": "5.5.5",
     "@eslint/js": "9.39.4",
-    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-prettier": "5.5.5",
     "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "7.0.1",
     "eslint-plugin-simple-import-sort": "12.1.1",
     "globals": "17.4.0",
-    "prettier": "3.8.1",
     "typescript-eslint": "8.58.0"
   },
   "devDependencies": {

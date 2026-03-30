@@ -1,5 +1,5 @@
 import backend from './backend.js';
-import base, { ALL_FILES, JS_FILES, TS_FILES } from './base.js';
+import base, { ALL_FILES, JS_FILES, REACT_FILES, TEST_FILES, TS_FILES } from './base.js';
 import frontend from './frontend.js';
 
 export default {
@@ -12,5 +12,7 @@ export default {
     ALL_FILES,
     JS_FILES,
     TS_FILES,
+    REACT_FILES,
+    TEST_FILES,
   },
 };

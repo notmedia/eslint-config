@@ -1,8 +1,9 @@
 import { defineConfig } from 'eslint/config';
 import react from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
 import globals from 'globals';
 
-import base, { ALL_FILES } from './base.js';
+import base, { REACT_FILES } from './base.js';
 
 export default defineConfig(
   {
@@ -15,11 +16,12 @@ export default defineConfig(
     },
   },
   {
-    files: [ALL_FILES],
-    plugins: {
-      react,
-    },
-    settings: { react: { version: 'detect' } },
+    files: [REACT_FILES],
+    extends: [
+      react.configs.flat.recommended,
+      react.configs.flat['jsx-runtime'],
+      reactHooks.configs['recommended-latest'],
+    ],
     languageOptions: {
       parserOptions: {
         ecmaFeatures: {
@@ -29,11 +31,7 @@ export default defineConfig(
     },
     rules: {
       'react/self-closing-comp': 'error',
-    },
-  },
-  {
-    files: [ALL_FILES],
-    rules: {
+
       'simple-import-sort/imports': [
         'error',
         {

@@ -28,8 +28,8 @@ export const TEST_FILES = '**/*.{spec,test}.{js,jsx,mjs,cjs,ts,tsx,mts,cts}';
 ```js
 // eslint.config.js
 
-import { defineConfig } from 'eslint/config';
 import eslint from '@notmedia/eslint-config';
+import { defineConfig } from 'eslint/config';
 
 export default defineConfig(eslint.configs.base, {
   files: [eslint.patterns.JS_FILES],

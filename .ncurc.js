@@ -2,5 +2,9 @@
 module.exports = {
   dep: ['prod', 'dev', 'optional', 'peer'],
   removeRange: true,
-  reject: ['eslint', '@eslint/js'],
+  reject: [
+    // https://github.com/jsx-eslint/eslint-plugin-react/issues/3977
+    'eslint',
+    '@eslint/js',
+  ],
 };

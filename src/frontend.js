@@ -20,7 +20,7 @@ export default defineConfig(
     extends: [
       react.configs.flat.recommended,
       react.configs.flat['jsx-runtime'],
-      reactHooks.configs['recommended-latest'],
+      reactHooks.configs.flat,
     ],
     languageOptions: {
       parserOptions: {

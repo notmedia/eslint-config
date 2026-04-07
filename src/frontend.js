@@ -36,13 +36,6 @@ export default defineConfig(
     },
     rules: {
       'react/self-closing-comp': 'error',
-
-      'simple-import-sort/imports': [
-        'error',
-        {
-          groups: [['^\\u0000'], ['^(node:)'], ['^[^.]'], ['^@/'], ['^\\.'], ['^.+\\.s?css$']],
-        },
-      ],
     },
   }
 );

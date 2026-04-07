@@ -45,7 +45,7 @@ export default defineConfig(
       'simple-import-sort/imports': [
         'error',
         {
-          groups: [['^\\u0000'], ['^(node:)'], ['^[^.]'], ['^\\.']],
+          groups: [['^\\u0000'], ['^(node:)'], ['^[^.]'], ['^@/'], ['^\\.'], ['^.+\\.s?css$']],
         },
       ],
     },

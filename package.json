@@ -1,6 +1,6 @@
 {
   "name": "@notmedia/eslint-config",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "author": "Alexey Vasyukov (@notmedia)",
   "homepage": "https://github.com/notmedia/eslint-config#readme",
   "files": [

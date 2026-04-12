@@ -1,8 +1,9 @@
 import { defineConfig } from 'eslint/config';
 import vue from 'eslint-plugin-vue';
 import globals from 'globals';
+import tseslint from 'typescript-eslint';
 
-import base from './base.js';
+import base, { VUE_FILES } from './base.js';
 
 export default defineConfig(
   {
@@ -14,5 +15,15 @@ export default defineConfig(
       },
     },
   },
-  ...vue.configs['flat/recommended']
+  ...vue.configs['flat/recommended'],
+  {
+    files: [VUE_FILES],
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+        extraFileExtensions: ['.vue'],
+        parser: tseslint.parser,
+      },
+    },
+  }
 );

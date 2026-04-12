@@ -1,5 +1,5 @@
 import backend from './backend.js';
-import base, { ALL_FILES, JS_FILES, REACT_FILES, TEST_FILES, TS_FILES } from './base.js';
+import base, { ALL_FILES, JS_FILES, REACT_FILES, TEST_FILES, TS_FILES, VUE_FILES } from './base.js';
 import react from './react.js';
 import vue from './vue.js';
 
@@ -15,6 +15,7 @@ export default {
     JS_FILES,
     TS_FILES,
     REACT_FILES,
+    VUE_FILES,
     TEST_FILES,
   },
 };

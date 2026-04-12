@@ -14,11 +14,5 @@ export default defineConfig(
       },
     },
   },
-  ...vue.configs['flat/recommended'],
-  {
-    files: ['**/*.vue'],
-    rules: {
-      'vue/multi-word-component-names': 'off',
-    },
-  }
+  ...vue.configs['flat/recommended']
 );

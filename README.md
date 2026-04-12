@@ -9,7 +9,8 @@ npm i eslint prettier @notmedia/eslint-config -D
 # Configs
 
 `base` - contains base configuration for both backend and frontend\
-`frontend` - extends from `base`, contains frontend (react) specific rules\
+`react` - extends from `base`, contains React specific rules\
+`vue` - extends from `base`, contains Vue specific rules\
 `backend` - extends from `base`, contains backend specific rules
 
 # Patterns
@@ -31,10 +32,12 @@ export const TEST_FILES = '**/*.{spec,test}.{js,jsx,mjs,cjs,ts,tsx,mts,cts}';
 import eslint from '@notmedia/eslint-config';
 import { defineConfig } from 'eslint/config';
 
-export default defineConfig(eslint.configs.base, {
-  files: [eslint.patterns.JS_FILES],
-  rules: {
-    '@typescript-eslint/no-unsafe-assignment': 'off',
-  },
-});
+// Backend
+export default defineConfig(eslint.configs.backend);
+
+// React
+export default defineConfig(eslint.configs.react);
+
+// Vue
+export default defineConfig(eslint.configs.vue);
 ```

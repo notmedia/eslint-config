@@ -3,7 +3,7 @@
 # Installation
 
 ```bash
-npm i eslint prettier @notmedia/eslint-config -D
+npm i eslint prettier notmedia-eslint-config -D
 ```
 
 # Configs
@@ -29,7 +29,7 @@ export const TEST_FILES = '**/*.{spec,test}.{js,jsx,mjs,cjs,ts,tsx,mts,cts}';
 ```js
 // eslint.config.js
 
-import eslint from '@notmedia/eslint-config';
+import eslint from 'notmedia-eslint-config';
 import { defineConfig } from 'eslint/config';
 
 // Backend

@@ -1,5 +1,6 @@
-/** @type {import('npm-check-updates').RunOptions} */
-module.exports = {
+import { defineConfig } from 'npm-check-updates';
+
+export default defineConfig({
   dep: ['prod', 'dev', 'optional', 'peer'],
   removeRange: true,
   reject: [
@@ -7,4 +8,4 @@ module.exports = {
     'eslint',
     '@eslint/js',
   ],
-};
+});
